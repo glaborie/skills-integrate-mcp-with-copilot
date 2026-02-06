@@ -198,3 +198,113 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* User menu styles */
+header {
+  position: relative;
+}
+
+.user-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.user-icon {
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.user-icon:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.menu-button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background-color: #3949ab;
+}
+
+.user-info {
+  padding: 10px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+#login-error {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Disable forms when not authenticated */
+#signup-container.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
